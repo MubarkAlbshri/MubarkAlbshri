@@ -70,7 +70,8 @@ elif enter == "Get" or enter == "G" :
     elif userenter == "Last id" or userenter == "Li":
         cr.execute("select user_id from Users")
         records = cr.fetchall()
-        print("Id = ", records[len(records) - 1])
+        lastId = records[len(records) - 1]
+        print("Id = ", lastId[0])
 
 
 
