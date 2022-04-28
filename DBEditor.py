@@ -19,10 +19,6 @@ if enter == "Add" or enter == "A":
         userenter = [len(records) + 1,input("Enter User Name: "),int(input("Enter User Age: "))]
         cr.execute(f"insert into Users(user_id, name, age) values({userenter[0]}, '{userenter[1].capitalize()}', {userenter[2]})")
 
-
-
-
-
 #Edit
 elif enter == "Edit" or enter == "E":
 
@@ -39,11 +35,6 @@ elif enter == "Edit" or enter == "E":
         name = input("Enter Name: ")
         newId = int(input("Enter New Id: "))
         cr.execute(f"update Users set user_id ='{newId}' where name = '{name.capitalize()}'")
-
-
-
-
-
 
 #Get
 elif enter == "Get" or enter == "G" :
@@ -63,10 +54,6 @@ elif enter == "Get" or enter == "G" :
         cr.execute("select user_id from Users")
         records = cr.fetchall()
         print("Id = ", records[len(records) - 1])
-
-
-
-
 
 #Delete
 elif enter == "Delete" or enter == "D":
