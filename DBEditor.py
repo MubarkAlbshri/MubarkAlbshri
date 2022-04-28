@@ -1,5 +1,4 @@
 #هذي النسخه الوحيدة بدون اعطال أو مشاكل
-#بس اجرب
 from sqlite3 import *
 
 db = connect("C:/Users/ehm-7/Desktop/intro.db")
