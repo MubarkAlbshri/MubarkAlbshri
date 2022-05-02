@@ -1,4 +1,5 @@
-Lesrn git & github
+# Learn git & github
+```
 - download git ---> install [conf]
 - create project 
 
@@ -15,3 +16,4 @@ Lesrn git & github
 --> push to github          --> git push
 
 --> get from github         --> git pull
+```
